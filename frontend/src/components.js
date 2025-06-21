@@ -496,9 +496,9 @@ export const APIPage = () => {
             <p className="text-gray-400 mb-6">Conversational AI with persistent memory and adaptive learning</p>
             <div className="bg-black rounded-lg p-4 mb-4">
               <code className="text-green-400 text-sm">
-                curl -X POST https://api.betablu.ai/cosmos/chat<br/>
-                -H "Authorization: Bearer YOUR_API_KEY"<br/>
-                -d '{"message": "Hello Cosmos"}'
+                {`curl -X POST https://api.betablu.ai/cosmos/chat
+-H "Authorization: Bearer YOUR_API_KEY"
+-d '{"message": "Hello Cosmos"}'`}
               </code>
             </div>
             <button className="w-full bg-white text-black py-2 rounded-full font-medium hover:bg-gray-200 transition-colors">
