@@ -526,10 +526,10 @@ export const APIPage = () => {
             <p className="text-gray-400 mb-6">Visual intelligence for image and video analysis</p>
             <div className="bg-black rounded-lg p-4 mb-4">
               <code className="text-gray-400 text-sm">
-                # Coming Soon<br/>
-                curl -X POST https://api.betablu.ai/nova/analyze<br/>
-                -H "Authorization: Bearer YOUR_API_KEY"<br/>
-                -F "image=@image.jpg"
+                {`# Coming Soon
+curl -X POST https://api.betablu.ai/nova/analyze
+-H "Authorization: Bearer YOUR_API_KEY"
+-F "image=@image.jpg"`}
               </code>
             </div>
             <button className="w-full bg-gray-700 text-gray-400 py-2 rounded-full font-medium cursor-not-allowed">
