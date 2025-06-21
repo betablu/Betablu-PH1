@@ -511,9 +511,9 @@ export const APIPage = () => {
             <p className="text-gray-400 mb-6">Deep research capabilities for comprehensive analysis</p>
             <div className="bg-black rounded-lg p-4 mb-4">
               <code className="text-green-400 text-sm">
-                curl -X POST https://api.betablu.ai/deepblu/research<br/>
-                -H "Authorization: Bearer YOUR_API_KEY"<br/>
-                -d '{"query": "climate change impacts"}'
+                {`curl -X POST https://api.betablu.ai/deepblu/research
+-H "Authorization: Bearer YOUR_API_KEY"
+-d '{"query": "climate change impacts"}'`}
               </code>
             </div>
             <button className="w-full bg-white text-black py-2 rounded-full font-medium hover:bg-gray-200 transition-colors">
