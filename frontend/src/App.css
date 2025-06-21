@@ -1,9 +1,9 @@
-/* OpenAI Website Clone - App.css */
+/* BetaBLU Website - App.css */
 .App {
   min-height: 100vh;
 }
 
-/* Custom styles for OpenAI clone */
+/* Custom styles for BetaBLU */
 .text-shadow {
   text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -12,16 +12,16 @@
   backdrop-filter: blur(10px);
 }
 
-/* Enhanced button styles */
+/* Enhanced button styles with blue theme */
 .btn-primary {
-  background: linear-gradient(135deg, #000 0%, #333 100%);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 /* Card hover effects */
@@ -31,33 +31,94 @@
 
 .card-hover:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
 }
 
-/* Gradient backgrounds */
+/* Blue gradient backgrounds */
 .gradient-bg {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Blue accent gradients */
+.blue-gradient {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #1d4ed8 100%);
+}
+
+.blue-gradient-text {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #1d4ed8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 /* Custom animations */
-@keyframes pulse-gentle {
+@keyframes pulse-blue {
   0%, 100% {
     opacity: 1;
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
   }
   50% {
     opacity: 0.8;
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
   }
 }
 
-.animate-pulse-gentle {
-  animation: pulse-gentle 2s ease-in-out infinite;
+.animate-pulse-blue {
+  animation: pulse-blue 2s ease-in-out infinite;
+}
+
+@keyframes glow-blue {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+  }
+}
+
+.animate-glow-blue {
+  animation: glow-blue 2s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Enhanced hover effects */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Blue themed elements */
+.blue-dot {
+  background: radial-gradient(circle, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.blue-ring {
+  border: 2px solid #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
 }
 
 /* Responsive typography */
@@ -83,4 +144,22 @@
     font-size: 4rem;
     line-height: 1.05;
   }
+}
+
+/* Custom scrollbar with blue theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
 }
